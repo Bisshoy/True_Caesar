@@ -9,9 +9,11 @@ void Decypher();
 int main() {
     std::string answer;
 
+    // Cypher or decypher user input 
     std::cout << "Do you want to cypher or decypher? [cypher/decypher]: ";
     std::getline(std::cin, answer);
 
+    // Chooses function based on answer input
     if (answer[0] == 'C' || answer[0] == 'c') {
         Cypher();
     } else if (answer[0] == 'D' || answer[0] == 'd') {
