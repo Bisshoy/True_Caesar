@@ -13,7 +13,7 @@ int main() {
     std::cout << "Do you want to cypher or decypher? [cypher/decypher]: ";
     std::getline(std::cin, answer);
 
-    // Chooses function based on answer input
+    // Chooses function based on answer 
     if (answer[0] == 'C' || answer[0] == 'c') {
         Cypher();
     } else if (answer[0] == 'D' || answer[0] == 'd') {
