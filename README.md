@@ -7,6 +7,7 @@ This program also includes a decypher option; for this, input the same
 shift value as the original; no extra work needs to be done. If the 
 original text was cyphered with a shift value of 5, then to decypher it,
 the user should input 5 at the prompt as well. 
+
 [NOTE: The formula for the decode shift is: 26 - (shift % 26)]
 
 Completed on November 5th, 2021 (Happy Guy Fawkes Day!)
