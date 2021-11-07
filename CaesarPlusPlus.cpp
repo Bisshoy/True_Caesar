@@ -42,6 +42,7 @@ std::string CaesarCypher(std::string original, int shift) {
             else {
                 original[i] = char(int(original[i] - 97 + shift) % 26 + 97);
             }
+            
         }
 
         // For uppercase letters 
@@ -55,6 +56,7 @@ std::string CaesarCypher(std::string original, int shift) {
             else {
                 original[i] = char(int(original[i] - 65 + shift) % 26 + 65);
             }
+            
         }
     }
     return original;
