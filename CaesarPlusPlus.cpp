@@ -28,6 +28,11 @@ int main() {
 
 // Caesar Cypher Function 
 std::string CaesarCypher(std::string original, int shift) {
+    // To account for negative shifts pushing into non-letter ASCII values 
+    if (shift < 0) {
+        shift = shift + 26;
+    }
+    
     // Iterate through all elements of original 
     for (int i = 0; i < original.size(); i++) {
 
